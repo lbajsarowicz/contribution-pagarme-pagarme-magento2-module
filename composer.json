@@ -18,7 +18,11 @@
         "php-coveralls/php-coveralls": "^2.5",
         "magento-ecg/coding-standard": "dev-master",
         "rregeer/phpunit-coverage-check": "^0.1.3",
-        "mockery/mockery": "^1.6.12"
+        "mockery/mockery": "^1.6.12",
+        "magento/magento-coding-standard": "^41",
+        "phpstan/phpstan": "^2.1",
+        "bitexpert/phpstan-magento": "^0.44",
+        "phpstan/extension-installer": "^1.4"
     },
     "authors":[
         {
@@ -37,6 +41,10 @@
         }
     },
     "config":{
-        "secure-http":false
+        "secure-http":false,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
+        }
     }
 }
